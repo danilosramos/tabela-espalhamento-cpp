@@ -1,40 +1,41 @@
-# Tabela de Espalhamento (Hash Table) em C++
+# Hash Table in C++
 
-Este projeto apresenta a implementação de uma **Tabela de Espalhamento (Hash Table)** em C++.
+This project presents the implementation of a **Hash Table** in C++.
 
-A Tabela de Espalhamento é uma estrutura de dados essencial para o armazenamento eficiente de dados, permitindo operações de inserção, busca e remoção em tempo médio **O(1)**.
+The Hash Table is an essential data structure for efficient data storage, allowing insertion, search, and removal operations in average time **O(1)**.
 
-## Conceitos Demonstrados
+## Demonstrated Concepts
 
-*   **Estruturas de Dados:** Implementação de uma Tabela Hash.
-*   **Resolução de Colisões:** Utilização de **encadeamento separado (Separate Chaining)** para lidar com colisões, onde cada *bucket* da tabela armazena uma lista encadeada de elementos.
-*   **Programação Orientada a Objetos (POO):** Uso de classes e herança para a estrutura da tabela.
-*   **Função Hash:** Implementação de uma função de espalhamento para mapear chaves para índices da tabela.
+*   **Data Structures:** Implementation of a Hash Table.
+*   **Collision Resolution:** Use of **separate chaining** to handle collisions, where each table _bucket_ stores a linked list of elements.
+*   **Object-Oriented Programming (OOP):** Use of classes and inheritance for the table structure.
+*   **Hash Function:** Implementation of a hashing function to map keys to table indices.
 
-## Estrutura do Projeto
+## Project Structure
 
-| Arquivo | Descrição |
-| :--- | :--- |
-| `TabelaEspalhamentoAbstrata.h` | Interface (classe abstrata) que define os métodos da Tabela Hash. |
-| `MinhaTabelaEspalhamento.h` | Implementação concreta da Tabela de Espalhamento. |
-| `Posicao.h` | Classe auxiliar para representar a posição na tabela. |
-| *Arquivos de Lista Encadeada* | A implementação depende de uma Lista Encadeada para o encadeamento separado. |
+| File | Description |
+| :-- | :-- |
+| `TabelaEspalhamentoAbstrata.h` | Interface (abstract class) that defines the Hash Table methods. |
+| `MinhaTabelaEspalhamento.h` | Concrete implementation of the Hash Table. |
+| `Posicao.h` | Auxiliary class to represent the position in the table. |
+| _Linked List Files_ | The implementation depends on a Linked List for separate chaining. |
 
-## Como Compilar e Executar
+## How to Compile and Run
 
-Este projeto é um conjunto de arquivos de cabeçalho e deve ser integrado a um arquivo de teste (`main.cpp`) e aos arquivos da Lista Encadeada para funcionar.
+This project is a set of header files and must be integrated with a test file (`main.cpp`) and the Linked List files to function.
 
-1.  Certifique-se de ter um compilador C++ (como g++) e os arquivos da Lista Encadeada (do `lista-encadeada-cpp`) no mesmo ambiente.
-2.  Compile o projeto:
-    ```bash
+1.  Ensure you have a C++ compiler (such as g++) and the Linked List files (from `lista-encadeada-cpp`) in the same environment.
+2.  Compile the project:
+    
+    ```shell
     g++ -std=c++17 main.cpp -o hash_table_test
     ```
-3.  Execute o teste:
-    ```bash
+    
+3.  Run the test:
+    
+    ```shell
     ./hash_table_test
     ```
+    
 
----
-**Linguagem:** C++
-**Tópicos:** Tabela Hash, Estruturas de Dados, Resolução de Colisões, POO.
-'''
+**Language:** C++ **Topics:** Hash Table, Data Structures, Collision Resolution, OOP.
